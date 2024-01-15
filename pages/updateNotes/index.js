@@ -5,4 +5,4 @@ createNoteInput.addEventListener("change", (e) => {
 });
 
 const urlParams = new URLSearchParams(window.location.search);
-const noteId = urlParams.get('noteId');
+const noteId = urlParams.get("noteId");
