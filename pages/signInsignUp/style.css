@@ -130,3 +130,14 @@ form > button:hover {
 form > button:active {
     transform: scale(1);
 }
+
+@media only screen and (max-width: 750px) {
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+    }
+    .circle1, .circle2 {
+        display: none;
+    }
+}

@@ -27,10 +27,34 @@ const createNotes = (array) => {
         card.classList.add("card");
         card.id = noteId;
 
-        const insideHtml = `<div class="card-header"><div class="card-heading">${heading}</div><a href="../updateNotes/updateNotes.html?noteId=${noteId}"><div class="edit-note"><img src="../../assets/edit-note.svg" alt=""></div></a></div><div class="card-content">${content}</div>`;
+        const insideHtml = `<div class="card-header"><div class="card-heading">${heading}</div><a href="../updateNotes/updateNotes.html?noteId=${noteId}"><div class="edit-note"><img src="../../assets/edit-note.svg" alt=""></div></a></div><div class="card-content">${content}</div><div class="delete-note"><img src="../../assets/delete_note.svg" alt="delete"></div>`;
 
         card.innerHTML = insideHtml;
 
+        const deleteButton = card.querySelector(".delete-note");
+        deleteButton.addEventListener("click", (event) => {
+            event.preventDefault();
+            if (confirm("Are you sure you want to delete this note?")) {
+                fetch(`${apiUrl}/note/delete/${noteId}`, {
+                    method: "DELETE",
+                    headers: {
+                        "Content-Type": "application/json",
+                        authorization: token,
+                    },
+                })
+                    .then((res) => res.json())
+                    .then((data) => {
+                        console.log(data);
+                        if (data.message) {
+                            location.href = "/pages/dashboard/dashboard.html";
+                        }
+                    })
+                    .catch((err) => {
+                        alert("Error Deleting Note");
+                        console.log(err);
+                    });
+            }
+        });
         cardContainer.appendChild(card);
     });
 };
@@ -55,5 +79,7 @@ window.addEventListener("load", () => {
                 alert("Error Fetching Data");
                 console.log(err);
             });
+    } else {
+        location.href = "/";
     }
 });

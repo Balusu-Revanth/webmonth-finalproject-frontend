@@ -117,3 +117,44 @@ main > div {
     right: -50px;
     bottom: -80px;
 }
+
+@media only screen and (max-width: 750px) {
+    nav {
+        padding: 0 15px;
+    }
+    main {
+        padding: 0 15px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /* background-color: #0094ff; */
+    }
+    main > div {
+        width: 90%;
+        text-align: center;
+    }
+    .left-section {
+        transform: translateY(0);
+    }
+    .heading {
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+    .sub-heading {
+        font-size: 18px;
+        font-weight: normal;
+        letter-spacing: 3px;
+    }
+    .right-section {
+        /* background-color: #ff57d0; */
+        transform: translateY(0);
+        display: flex;
+        justify-content: center;
+    }
+    .homepage-illustration {
+        width: 100%;
+    }
+    .circle1,
+    .circle2 {
+        display: none;
+    }
+}
