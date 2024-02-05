@@ -1,7 +1,7 @@
-# Frontend - Easy Note Taker
+# Frontend - Nice Note Taker
 
 ## Project Overview
-Welcome to Easy Note Taker, a user-friendly note-taking application designed to simplify the process of creating, updating, and deleting notes. The frontend, developed with HTML, CSS, and JavaScript, ensures an intuitive and engaging user interface. The app incorporates JWT authentication for user authorization, enhancing security during interactions with the backend.
+Welcome to Nice Note Taker, a user-friendly note-taking application designed to simplify the process of creating, updating, and deleting notes. The frontend, developed with HTML, CSS, and JavaScript, ensures an intuitive and engaging user interface. The app incorporates JWT authentication for user authorization, enhancing security during interactions with the backend.
 
 ## Key Features
 - Create, Update, and Delete notes seamlessly
@@ -29,7 +29,7 @@ Feel free to explore and customize the code according to your requirements.
 ## Backend Repository
 Find the backend logic and server-side implementation in the [final-project-backend](https://github.com/Balusu-Revanth/final-project-backend).
 
-Feel free to explore and integrate the backend with the frontend to unleash the full potential of the Easy Note Taker application.
+Feel free to explore and integrate the backend with the frontend to unleash the full potential of the Nice Note Taker application.
 
 ## Conclusion
-Easy Note Taker frontend provides a simple and effective solution for managing your notes. Whether you're a student, professional, or anyone in need of a straightforward note-taking app, this project offers an easily customizable foundation for your needs.
+Nice Note Taker frontend provides a simple and effective solution for managing your notes. Whether you're a student, professional, or anyone in need of a straightforward note-taking app, this project offers an easily customizable foundation for your needs.
