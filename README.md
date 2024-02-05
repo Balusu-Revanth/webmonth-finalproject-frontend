@@ -26,5 +26,10 @@ The frontend follows a modular structure organized into different pages, each wi
 
 Feel free to explore and customize the code according to your requirements.
 
+## Backend Repository
+Find the backend logic and server-side implementation in the [final-project-backend](https://github.com/Balusu-Revanth/final-project-backend).
+
+Feel free to explore and integrate the backend with the frontend to unleash the full potential of the Easy Note Taker application.
+
 ## Conclusion
 Easy Note Taker frontend provides a simple and effective solution for managing your notes. Whether you're a student, professional, or anyone in need of a straightforward note-taking app, this project offers an easily customizable foundation for your needs.
